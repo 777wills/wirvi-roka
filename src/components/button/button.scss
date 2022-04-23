@@ -1,0 +1,12 @@
+.wirfy-button {
+  span {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}
