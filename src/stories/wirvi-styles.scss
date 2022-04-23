@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+$blue-green: #2dbcbb;
+$picton-blue: #4fc8f2;
+$android-green: #b7d331;
+$white: #f7f7f7;
+$background: red;
+
+$purple: #2dbcbb;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+
+$family-sans-serif: 'Nunito', sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $blue-green;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@import 'node_modules/bulma/sass/base/_all.sass';
+@import 'node_modules/bulma/sass/utilities/_all.sass';
+@import 'node_modules/bulma/sass/elements/button.sass';
