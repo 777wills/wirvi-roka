@@ -1,8 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import '../wirvi-styles.scss';
-import { Icon } from '../icon';
-import Button from '../../components/button/Button';
+import { Button } from '@components/index';
+import { Icon } from '@stories/icon';
 
 export default {
   title: 'Wirvi-roka/Button',

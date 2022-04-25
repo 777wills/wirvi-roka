@@ -3,7 +3,7 @@ import React from 'react';
 import './button.scss';
 
 import classNames from 'classnames';
-import { IButton } from './interfaces';
+import { IButton } from '@components/button';
 
 const namespace = 'wirfy-button';
 

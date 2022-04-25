@@ -20,12 +20,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@stories/*": ["stories/*"],
+      "@test/*": ["test/*"]
+    }
   },
   "include": [
     "src"
-  ],
-  "exclude": [
-    "src/stories"
   ]
 }
