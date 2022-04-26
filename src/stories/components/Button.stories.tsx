@@ -1,49 +1,51 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import '../wirvi-styles.scss';
-import { Button } from '@components/index';
+import { Button, IButton } from '@components/index';
 import { Icon } from '@stories/icon';
 
 export default {
   title: 'Wirvi-roka/Button',
-  component: Button
-} as ComponentMeta<typeof Button>
+  component: Button,
+} as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args: IButton) => (
+  <Button {...args} />
+);
 
 export const Basic = Template.bind({});
 Basic.args = {
   text: 'Hello Word!',
-}
+};
 
-export const TextChildren: ComponentStory<typeof Button> = (args) => (
+export const TextChildren: ComponentStory<typeof Button> = (args: IButton) => (
   <Button {...args}>Label Children</Button>
 );
 
 export const WithIcon = Template.bind({});
 WithIcon.args = {
   icon: <Icon />,
-  text: 'Hello Word!'
-}
+  text: 'Hello Word!',
+};
 
 export const OnlyIcon = Template.bind({});
 OnlyIcon.args = {
-  icon: <Icon />
-}
+  icon: <Icon />,
+};
 
 export const FullScreen = Template.bind({});
 FullScreen.args = {
   isFullwidth: true,
-  text: 'Full Screen'
-}
+  text: 'Full Screen',
+};
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   isDisabled: true,
-  text: 'Disabled'
-}
+  text: 'Disabled',
+};
 
-export const WithChildren: ComponentStory<typeof Button> = (args) => (
+export const WithChildren: ComponentStory<typeof Button> = (args: IButton) => (
   <Button {...args}>
     <span style={{ marginRight: '10px' }}>Label Children</span>
     <Icon />
@@ -53,5 +55,5 @@ export const WithChildren: ComponentStory<typeof Button> = (args) => (
 export const WithLoading = Template.bind({});
 WithLoading.args = {
   isLoading: true,
-  text: 'Hello Word!'
-}
+  text: 'Hello Word!',
+};

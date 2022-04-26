@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 
 import './button.scss';
@@ -51,8 +52,7 @@ export const Button = ({
       className={buttonClasses}
       disabled={isDisabled}
       style={style}
-      onClick={onClick}
-    >
+      onClick={onClick}>
       {icon && <span className={iconClasses}>{icon}</span>}
       {text && <span>{text}</span>}
       {children}
